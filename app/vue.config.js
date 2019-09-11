@@ -28,6 +28,7 @@ module.exports = {
     devServer: {
         publicPath: baseUrl, // 和 baseUrl 保持一致
         // 代理设置
+        host: 'local.wormpex.com',
         proxy: {
             // 网关入口
             // 示例：访问key为info-manage的服务接口，请访问“/service/info-manage”
@@ -39,12 +40,6 @@ module.exports = {
                     '^/service': ''
                 }
             },
-            /* '/master': {
-                target: 'http://10.4.106.5:8089',
-                ws: true,
-                changeOrigin: true,
-                pathRewrite: { '^/master': '' }
-            }, */
             '/master': {
                 target: 'http://10.4.138.221:8089',
                 ws: true,
