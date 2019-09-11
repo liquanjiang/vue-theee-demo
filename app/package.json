@@ -6,7 +6,8 @@
         "serve": "vue-cli-service serve",
         "start": "npx --max_old_space_size=4096 vue-cli-service serve --open",
         "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+        "lint": "eslint ./src ",
+        "precommit": "npm run lint"
     },
     "dependencies": {
         "core-js": "^2.6.5",
@@ -20,18 +21,19 @@
         "@vue/cli-plugin-babel": "^3.11.0",
         "@vue/cli-plugin-eslint": "^3.11.0",
         "@vue/cli-service": "^3.11.0",
-        "axios": "^0.18.0",
-        "babel-polyfill": "^6.26.0",
-        "babel-eslint": "^10.0.1",
-        "eslint": "^5.16.0",
-        "eslint-plugin-vue": "^5.0.0",
-        "vue-template-compiler": "^2.6.10",
         "@vue/eslint-config-standard": "^3.0.0-rc.4",
         "@vue/test-utils": "^1.0.0-beta.20",
+        "axios": "^0.18.0",
         "babel-core": "7.0.0-bridge.0",
+        "babel-eslint": "^10.0.1",
         "babel-jest": "^24.8.0",
         "babel-plugin-component": "^1.1.1",
-        "babel-plugin-import": "^1.9.1"
+        "babel-plugin-import": "^1.9.1",
+        "babel-polyfill": "^6.26.0",
+        "eslint": "^5.16.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "husky": "^4.0.0-beta.1",
+        "vue-template-compiler": "^2.6.10"
     },
     "eslintConfig": {
         "root": true,

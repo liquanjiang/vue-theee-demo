@@ -19,7 +19,7 @@ module.exports = {
         "block-spacing":["warn","always"],
         "brace-style": ["warn", "1tbs"],
         "camelcase": ["error", { "properties": "never" }],
-        "callback-return": ["error", ["cb", "callback", "next"]],
+        "callback-return": ["off", ["cb", "callback", "next"]],
         "comma-dangle": ["error", {
             "arrays": "never",
             "objects": "never",
@@ -37,7 +37,7 @@ module.exports = {
         "guard-for-in": "error",
         "key-spacing":["error", { "beforeColon": false, "afterColon": true }],
         "lines-around-comment": ["error", {
-            "beforeBlockComment": true,
+            "beforeBlockComment": false,
             "afterBlockComment": false,
             "beforeLineComment": false,
             "afterLineComment": false

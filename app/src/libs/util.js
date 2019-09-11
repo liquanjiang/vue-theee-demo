@@ -124,6 +124,8 @@ util.getWeekByNum = (num) => {
             return '星期六'
         case 0 :
             return '星期日'
+        default:
+            return ''
     }
 }
 
@@ -272,7 +274,7 @@ util.getSingleArray = (array, key) => {
     }
     const len = array.length
     const arr = []
-    for (let i = 0; i < len; i++) {
+    for (let i = 0; i < len; i ++) {
         if (array[i][key]) {
             arr.push(array[i][key])
         }
@@ -299,7 +301,7 @@ util.splitString = (params, lengthNum) => {
     // 条件等同于rowNumber>1
     if (paramslen > newlen) {
         /** 循环每一行,p表示行 */
-        for (let p = 0; p < rowNumber; p++) {
+        for (let p = 0; p < rowNumber; p ++) {
             let tempStr = ''// 表示每一次截取的字符串
             const start = p * newlen// 开始截取的位置
             const end = start + newlen// 结束截取的位置
@@ -326,7 +328,7 @@ util.makeTips = (string, leng) => {
     const len = string.length
     const arrlen = Math.ceil(len / leng)
     let divStr = `<span>`
-    for (let i = 0; i < arrlen; i++) {
+    for (let i = 0; i < arrlen; i ++) {
         let str
         const flag = len > leng * (i + 1)
         str = flag ? string.substring(i * leng, leng * (i + 1)) : string.substring(i * leng)
@@ -344,7 +346,7 @@ util.choseArr = (array, key1, fun, key, key2) => {
         return arr
     }
     const len = array.length
-    for (let i = 0; i < len; i++) {
+    for (let i = 0; i < len; i ++) {
         if (fun(array[i][key1], key, key2)) {
             arr.push(array[i])
         }
@@ -382,7 +384,7 @@ util.numSeat = (num, length) => {
         return numStr
     }
     const ln = length - numStr.length
-    for (let i = 0; i < ln; i++) {
+    for (let i = 0; i < ln; i ++) {
         numStr = '0' + numStr
     }
     return numStr
