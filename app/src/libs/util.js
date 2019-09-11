@@ -15,7 +15,7 @@ let util = {
 }
 
 /*********************
- 消息弹窗框----提示，成功，警告，失败
+ 消息弹窗框------提示，成功，警告，失败
  *********************/
 
 util.showMessage = function (msg = '', type = 'success', repeat = true, opts = { timeOut: 6000 }) {
