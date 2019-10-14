@@ -13,7 +13,7 @@ module.exports = {
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'indent': [1, 4, { 'SwitchCase': 1 }],
+        'indent': [1, 2, { 'SwitchCase': 1 }],
         'space-before-function-paren': [1, { 'anonymous': 'always', 'named': 'always', 'asyncArrow': 'always' }],
         "array-callback-return": "error",
         "block-spacing":["warn","always"],

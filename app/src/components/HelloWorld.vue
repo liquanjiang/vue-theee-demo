@@ -7,12 +7,17 @@
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
     <h3>Installed CLI Plugins</h3>
+    <Select></Select>
   </div>
 </template>
 
 <script>
+  import Select from './common/select'
 export default {
   name: 'HelloWorld',
+  components: {
+    Select
+  },
   props: {
     msg: String
   }

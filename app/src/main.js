@@ -8,6 +8,6 @@ Vue.config.productionTip = false
 Vue.prototype.$lodash = lodash
 
 new Vue({
-    store,
-    render: h => h(App)
+  store,
+  render: h => h(App)
 }).$mount('#app')
