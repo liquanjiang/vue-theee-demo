@@ -12,7 +12,7 @@
     "dependencies": {
         "core-js": "^2.6.5",
         "jquery": "^3.4.1",
-        "lodash": "^4.17.14",
+        "lodash": "^4.17.21",
         "react-native": "^0.60.5",
         "three": "^0.108.0",
         "vue": "^2.6.10",
